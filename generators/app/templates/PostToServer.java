@@ -1,3 +1,4 @@
+<%= packageName %>
 
 import java.util.HashMap;
 //Add RetroFit libraries to your project
@@ -8,12 +9,12 @@ import retrofit.http.*;
 import retrofit.Callback;
 
 /**
- *		Generated Using IoT communication framework generator
+ *		Generated Using IoT communication framework generator (IotCom)
  */
  
 public class PostToServer {
 
-    public static final String API_URL = "<%= ServerAddress1 %>";
+    public static final String API_URL = "<%= ServerAddress %>";
 
     private static class postData {
 		
@@ -21,11 +22,6 @@ public class PostToServer {
         
 		 <%= constructor %>
 		 
-        postData(String Name,String ID) {
-            this.Name = Name;
-            this.ID = ID;
-        }
-
     }
         interface PostTo {
             @Headers( "Content-Type: application/json" )
@@ -41,6 +37,7 @@ public class PostToServer {
                     .build();
 
             HashMap<String, String> data= new HashMap<>();
+			
 			<%= putVariablesInMap %>
             
             PostTo post = restAdapter.create(PostTo.class);

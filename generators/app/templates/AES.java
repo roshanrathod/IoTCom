@@ -1,4 +1,4 @@
-package cppmastersproject.iot;
+<%= packageName %>
 
 /**
  * Generated Using IoT communication framework generator (IotCom)
