@@ -28,7 +28,7 @@
     "yeoman-generator": "0.22.2",
     "yo": "1.6.0",
     "semver": "5.1.0",
-	 "jquery": "~1.9.1",
+	 "jquery": "~> 3.0.0",
     "jquery-ui": "~1.12.0"
 	}
 }
