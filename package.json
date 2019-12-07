@@ -23,7 +23,7 @@
     "mkdirp": "0.5.1",
     "shelljs": "0.5.3",
     "pluralize": "1.2.1",
-    "underscore.string": "3.2.2",
+    "underscore.string": "3.3.5",
     "wordwrap": "1.0.0",
     "yeoman-generator": "0.22.2",
     "yo": "1.6.0",
